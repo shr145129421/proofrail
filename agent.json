@@ -1,0 +1,37 @@
+{
+  "name": "Proofrail",
+  "agentName": "SynthPartner",
+  "description": "A private-by-default execution layer for autonomous agents that enforces delegated permissions, policy bounds, and verifiable receipts.",
+  "operatorWallet": "0x2180227875EdF6e2089636Dd9369e458cAf6Da87",
+  "erc8004Identity": {
+    "participantUuid": "175f95c77f654746906cace668787881",
+    "teamUuid": "3027ccd0abc74f8e834860c1571b7aa1",
+    "agentId": 34931
+  },
+  "harness": "openclaw",
+  "model": "gpt-5.4",
+  "supportedTools": [
+    "read",
+    "write",
+    "edit",
+    "exec",
+    "web_fetch",
+    "github"
+  ],
+  "techStack": [
+    "Node.js",
+    "JSON receipts",
+    "GitHub",
+    "OpenClaw"
+  ],
+  "computeConstraints": {
+    "designGoal": "bounded, auditable execution",
+    "notes": "Prioritizes constrained execution over unconstrained autonomy"
+  },
+  "taskCategories": [
+    "policy enforcement",
+    "agent action verification",
+    "receipt generation",
+    "auditable execution"
+  ]
+}

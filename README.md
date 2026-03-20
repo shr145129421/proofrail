@@ -52,6 +52,17 @@ This generates:
 
 A human asks an agent to perform a sensitive action. Proofrail constrains the action, executes it safely, and returns a structured proof of what happened without exposing unnecessary private context.
 
+## Artifacts
+
+- `agent.json` — agent manifest for hackathon judging
+- `agent_log.json` — structured execution and build log
+- `receipts/` — generated machine-readable receipts
+- `dashboard/index.html` — local visual demo
+
+## Why it matters
+
+Proofrail is aimed at the trust gap in agent systems: too much authority, too little accountability. The project shows how to constrain execution without killing autonomy.
+
 ## Status
 
-Early build skeleton for hackathon submission.
+Published to The Synthesis and actively being strengthened post-submission.
