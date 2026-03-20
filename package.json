@@ -1,0 +1,11 @@
+{
+  "name": "proofrail",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node app/index.mjs",
+    "demo": "node app/index.mjs",
+    "receipt": "node app/index.mjs --demo"
+  }
+}

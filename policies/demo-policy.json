@@ -1,0 +1,12 @@
+{
+  "policyId": "policy-demo-001",
+  "riskLevel": "medium",
+  "allowedActions": ["read", "analyze", "report"],
+  "targetAllowlist": ["internal-data", "approved-api"],
+  "maxSpend": {
+    "amount": 25,
+    "asset": "USDC"
+  },
+  "requiresHumanConfirmation": false,
+  "notes": "Demo policy for Synthesis hackathon MVP"
+}

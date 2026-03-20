@@ -1,0 +1,10 @@
+{
+  "requester": "fusu888",
+  "summary": "Analyze a sensitive treasury routing task and generate a verifiable execution receipt without exposing unnecessary private context.",
+  "action": "analyze",
+  "target": "approved-api",
+  "plannedSpend": {
+    "amount": 12,
+    "asset": "USDC"
+  }
+}

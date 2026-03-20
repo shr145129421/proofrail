@@ -1,0 +1,87 @@
+{
+  "receiptVersion": 1,
+  "project": "Proofrail",
+  "task": {
+    "requester": "fusu888",
+    "summary": "Analyze a sensitive treasury routing task and generate a verifiable execution receipt without exposing unnecessary private context.",
+    "action": "analyze",
+    "target": "approved-api",
+    "plannedSpend": {
+      "amount": 12,
+      "asset": "USDC"
+    }
+  },
+  "actor": {
+    "type": "agent",
+    "name": "SynthPartner",
+    "harness": "openclaw",
+    "model": "gpt-5.4"
+  },
+  "authority": {
+    "model": "scoped-delegation",
+    "policyId": "policy-demo-001",
+    "riskLevel": "medium",
+    "wallet": "0x2180227875EdF6e2089636Dd9369e458cAf6Da87"
+  },
+  "policy": {
+    "policyId": "policy-demo-001",
+    "riskLevel": "medium",
+    "allowedActions": [
+      "read",
+      "analyze",
+      "report"
+    ],
+    "targetAllowlist": [
+      "internal-data",
+      "approved-api"
+    ],
+    "maxSpend": {
+      "amount": 25,
+      "asset": "USDC"
+    },
+    "requiresHumanConfirmation": false,
+    "notes": "Demo policy for Synthesis hackathon MVP"
+  },
+  "timeline": [
+    {
+      "type": "intent_received",
+      "at": "2026-03-20T19:17:08.785Z",
+      "detail": "fusu888 requested: Analyze a sensitive treasury routing task and generate a verifiable execution receipt without exposing unnecessary private context."
+    },
+    {
+      "type": "policy_compiled",
+      "at": "2026-03-20T19:17:08.786Z",
+      "detail": "Policy policy-demo-001 compiled with risk=medium"
+    },
+    {
+      "type": "action_checked",
+      "at": "2026-03-20T19:17:08.786Z",
+      "detail": "Action analyze is allowed"
+    },
+    {
+      "type": "target_checked",
+      "at": "2026-03-20T19:17:08.786Z",
+      "detail": "Target approved-api is allowlisted"
+    },
+    {
+      "type": "spend_checked",
+      "at": "2026-03-20T19:17:08.786Z",
+      "detail": "Planned spend 12 USDC is within cap"
+    },
+    {
+      "type": "task_completed",
+      "at": "2026-03-20T19:17:08.786Z",
+      "detail": "Demo execution finished inside policy bounds"
+    }
+  ],
+  "outcome": {
+    "status": "success",
+    "spendUsed": {
+      "amount": 12,
+      "asset": "USDC"
+    },
+    "summary": "Task executed within policy; receipt generated."
+  },
+  "generatedAt": "2026-03-20T19:17:08.786Z",
+  "receiptHash": "aa703be211ed3064618711f916e18f796c9cc4f6dec1b963f59fbf2aac21e36d"
+}

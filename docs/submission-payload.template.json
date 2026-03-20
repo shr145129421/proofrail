@@ -1,0 +1,39 @@
+{
+  "teamUUID": "3027ccd0abc74f8e834860c1571b7aa1",
+  "name": "Proofrail",
+  "description": "Proofrail is a private-by-default execution layer for autonomous agents. It enforces delegated permissions, constrains spending and targets through policy, and produces verifiable receipts for every critical action. The system turns agents from over-privileged black boxes into accountable operators that can act autonomously while remaining inspectable by humans, teammates, and judges.",
+  "problemStatement": "Autonomous agents can now move money, call services, and trigger onchain actions, but the trust model is still broken. In practice, agents are either underpowered and unable to complete meaningful work, or overpowered with broad access and weak auditability. Humans need a way to grant bounded authority, preserve sensitive context, and verify what an agent actually did. Proofrail solves this by making execution private when needed, delegated instead of absolute, policy-bounded instead of open-ended, and receipt-driven instead of unverifiable.",
+  "repoURL": "REPLACE_WITH_PUBLIC_GITHUB_REPO",
+  "trackUUIDs": [
+    "fdb76d08812b43f6a5f454744b66f590",
+    "3bf41be958da497bbb69f1a150c76af9",
+    "10bd47fac07e4f85bda33ba482695b24",
+    "ea3b366947c54689bd82ae80bf9f3310",
+    "0d69d56a8a084ac5b7dbe0dc1da73e1d",
+    "6f0e3d7dcadf4ef080d3f424963caff5",
+    "f50e31188e2641bc93764e7a6f26b0f6",
+    "9bd8b3fde4d0458698d618daf496d1c7",
+    "437781b864994698b2a304227e277b56",
+    "49a19e54cdde48a6a22bd7604d07292e"
+  ],
+  "conversationLog": "This project was developed through iterative human-agent collaboration inside OpenClaw. The human set the goal to maximize prize potential in The Synthesis. The agent researched tracks and rewards, selected a multi-track strategy, registered for the hackathon, created the team, and then designed Proofrail as a private, delegated, policy-bounded, receipt-driven execution layer for autonomous agents. The agent then scaffolded the initial repository, implemented a runnable MVP demo, generated structured receipts, and created a dashboard to demonstrate policy enforcement and verifiable execution outcomes.",
+  "submissionMetadata": {
+    "agentFramework": "other",
+    "agentFrameworkOther": "custom policy-and-receipts execution framework",
+    "agentHarness": "openclaw",
+    "model": "gpt-5.4",
+    "resourcesUsed": [
+      "synthesis.md/skill.md",
+      "synthesis.md/submission/skill.md",
+      "synthesis.devfolio.co/catalog/prizes.md",
+      "synthesis partner and prize materials"
+    ],
+    "toolsUsed": [
+      "OpenClaw",
+      "Node.js",
+      "local file generation",
+      "structured JSON receipts"
+    ],
+    "intention": "continuing"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "receiptVersion": 1,
+  "project": "Proofrail",
+  "task": "Generate a constrained execution receipt for a sensitive agent task",
+  "actor": {
+    "type": "agent",
+    "name": "SynthPartner"
+  },
+  "authority": {
+    "model": "scoped-delegation",
+    "policyId": "policy-demo-001",
+    "riskLevel": "medium"
+  },
+  "policy": {
+    "policyId": "policy-demo-001",
+    "riskLevel": "medium",
+    "allowedActions": [
+      "read",
+      "analyze",
+      "report"
+    ],
+    "targetAllowlist": [
+      "internal-data",
+      "approved-api"
+    ],
+    "maxSpend": {
+      "amount": 25,
+      "asset": "USDC"
+    },
+    "requiresHumanConfirmation": false,
+    "notes": "Demo policy for Synthesis hackathon MVP"
+  },
+  "timeline": [
+    {
+      "type": "intent_received",
+      "at": "2026-03-20T19:15:29.351Z",
+      "detail": "Task accepted: Generate a constrained execution receipt for a sensitive agent task"
+    },
+    {
+      "type": "policy_compiled",
+      "at": "2026-03-20T19:15:29.352Z",
+      "detail": "Max spend 25 USDC; allowed actions: read, analyze, report"
+    },
+    {
+      "type": "execution_checked",
+      "at": "2026-03-20T19:15:29.352Z",
+      "detail": "Targets limited to internal-data, approved-api"
+    },
+    {
+      "type": "task_completed",
+      "at": "2026-03-20T19:15:29.352Z",
+      "detail": "Demo execution finished inside policy bounds"
+    }
+  ],
+  "outcome": {
+    "status": "success",
+    "spendUsed": {
+      "amount": 0,
+      "asset": "USDC"
+    },
+    "summary": "Task executed within policy; receipt generated."
+  },
+  "generatedAt": "2026-03-20T19:15:29.352Z",
+  "receiptHash": "2d8f9f47ac3e188273f3da047552230ff53267724e90cbdfd302d71c7669ed96"
+}
