@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node app/index.mjs",
     "demo": "node app/index.mjs",
-    "receipt": "node app/index.mjs --demo"
+    "receipt": "node app/index.mjs --demo",
+    "serve": "node app/server.mjs"
   }
 }

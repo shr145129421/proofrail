@@ -26,7 +26,7 @@
   <div class="wrap">
     <div class="hero">
       <h1>Proofrail Dashboard</h1>
-      <p>Private-by-default, delegated, policy-bounded execution with verifiable receipts for autonomous agents. This demo now shows both allowed and blocked execution paths, which makes the safety model much easier for judges to understand.</p>
+      <p>Private-by-default, delegated, policy-bounded execution with verifiable receipts for autonomous agents. This demo shows both allowed and blocked execution paths, which makes the safety model easier to inspect.</p>
     </div>
 
     <div class="grid">
@@ -36,7 +36,7 @@
       <p><strong>Status:</strong> <span class="ok">success</span></p>
       <p><strong>Policy:</strong> policy-demo-001</p>
       <p><strong>Task:</strong> Analyze a sensitive treasury routing task and generate a verifiable execution receipt without exposing unnecessary private context.</p>
-      <p><strong>Receipt Hash:</strong><br />86e51868e428b1c6013ed8b1c81ba7c1bd54253fe9219e3317a5088e3a75d08d</p>
+      <p><strong>Receipt Hash:</strong><br />3a6bad5b5874b36fb58eee53eb4423d2ea7f148468f445bff66e7142ecedceff</p>
     </div>
     <div class="card">
       <div class="label">Scenario</div>
@@ -44,7 +44,7 @@
       <p><strong>Status:</strong> <span class="bad">blocked</span></p>
       <p><strong>Policy:</strong> policy-block-001</p>
       <p><strong>Task:</strong> Attempt a high-risk treasury action against a non-allowlisted target with spend beyond the configured cap.</p>
-      <p><strong>Receipt Hash:</strong><br />43af52e9b6ca8d43dcebcc40a627530f87cdd3b294e78b48c6d9896d8ca606e8</p>
+      <p><strong>Receipt Hash:</strong><br />9c6ba87e5297e058319efd1ba6209d49c450bb4ec89f3ceb50f2d305190ef92b</p>
     </div></div>
 
     <div class="card" style="margin-top:16px;">
@@ -58,37 +58,37 @@
         <ul>
       <li>
         <strong>intent_received</strong><br />
-        <span>2026-03-22T16:42:29.815Z</span><br />
+        <span>2026-03-22T20:43:48.874Z</span><br />
         <span>fusu888 requested: Analyze a sensitive treasury routing task and generate a verifiable execution receipt without exposing unnecessary private context.</span>
       </li>
       <li>
         <strong>policy_compiled</strong><br />
-        <span>2026-03-22T16:42:29.815Z</span><br />
+        <span>2026-03-22T20:43:48.874Z</span><br />
         <span>Policy policy-demo-001 compiled with risk=medium</span>
       </li>
       <li>
         <strong>action_checked</strong><br />
-        <span>2026-03-22T16:42:29.815Z</span><br />
+        <span>2026-03-22T20:43:48.874Z</span><br />
         <span>Action analyze is allowed</span>
       </li>
       <li>
         <strong>target_checked</strong><br />
-        <span>2026-03-22T16:42:29.815Z</span><br />
+        <span>2026-03-22T20:43:48.874Z</span><br />
         <span>Target approved-api is allowlisted</span>
       </li>
       <li>
         <strong>spend_checked</strong><br />
-        <span>2026-03-22T16:42:29.815Z</span><br />
+        <span>2026-03-22T20:43:48.874Z</span><br />
         <span>Planned spend 12 USDC is within cap</span>
       </li>
       <li>
         <strong>confirmation_checked</strong><br />
-        <span>2026-03-22T16:42:29.815Z</span><br />
+        <span>2026-03-22T20:43:48.874Z</span><br />
         <span>No human confirmation required for this policy</span>
       </li>
       <li>
         <strong>task_completed</strong><br />
-        <span>2026-03-22T16:42:29.815Z</span><br />
+        <span>2026-03-22T20:43:48.874Z</span><br />
         <span>Demo execution finished inside policy bounds</span>
       </li></ul>
       </div>
@@ -148,37 +148,37 @@
   "timeline": [
     {
       "type": "intent_received",
-      "at": "2026-03-22T16:42:29.815Z",
+      "at": "2026-03-22T20:43:48.874Z",
       "detail": "fusu888 requested: Analyze a sensitive treasury routing task and generate a verifiable execution receipt without exposing unnecessary private context."
     },
     {
       "type": "policy_compiled",
-      "at": "2026-03-22T16:42:29.815Z",
+      "at": "2026-03-22T20:43:48.874Z",
       "detail": "Policy policy-demo-001 compiled with risk=medium"
     },
     {
       "type": "action_checked",
-      "at": "2026-03-22T16:42:29.815Z",
+      "at": "2026-03-22T20:43:48.874Z",
       "detail": "Action analyze is allowed"
     },
     {
       "type": "target_checked",
-      "at": "2026-03-22T16:42:29.815Z",
+      "at": "2026-03-22T20:43:48.874Z",
       "detail": "Target approved-api is allowlisted"
     },
     {
       "type": "spend_checked",
-      "at": "2026-03-22T16:42:29.815Z",
+      "at": "2026-03-22T20:43:48.874Z",
       "detail": "Planned spend 12 USDC is within cap"
     },
     {
       "type": "confirmation_checked",
-      "at": "2026-03-22T16:42:29.815Z",
+      "at": "2026-03-22T20:43:48.874Z",
       "detail": "No human confirmation required for this policy"
     },
     {
       "type": "task_completed",
-      "at": "2026-03-22T16:42:29.815Z",
+      "at": "2026-03-22T20:43:48.874Z",
       "detail": "Demo execution finished inside policy bounds"
     }
   ],
@@ -190,8 +190,8 @@
     },
     "summary": "Task executed within policy; receipt generated."
   },
-  "generatedAt": "2026-03-22T16:42:29.816Z",
-  "receiptHash": "86e51868e428b1c6013ed8b1c81ba7c1bd54253fe9219e3317a5088e3a75d08d"
+  "generatedAt": "2026-03-22T20:43:48.875Z",
+  "receiptHash": "3a6bad5b5874b36fb58eee53eb4423d2ea7f148468f445bff66e7142ecedceff"
 }</pre>
       </div>
       <div class="card" style="margin-top:16px;">
@@ -199,37 +199,37 @@
         <ul>
       <li>
         <strong>intent_received</strong><br />
-        <span>2026-03-22T16:42:29.816Z</span><br />
+        <span>2026-03-22T20:43:48.876Z</span><br />
         <span>fusu888 requested: Attempt a high-risk treasury action against a non-allowlisted target with spend beyond the configured cap.</span>
       </li>
       <li>
         <strong>policy_compiled</strong><br />
-        <span>2026-03-22T16:42:29.816Z</span><br />
+        <span>2026-03-22T20:43:48.876Z</span><br />
         <span>Policy policy-block-001 compiled with risk=high</span>
       </li>
       <li>
         <strong>action_checked</strong><br />
-        <span>2026-03-22T16:42:29.816Z</span><br />
+        <span>2026-03-22T20:43:48.876Z</span><br />
         <span>Action execute_transfer is blocked</span>
       </li>
       <li>
         <strong>target_checked</strong><br />
-        <span>2026-03-22T16:42:29.816Z</span><br />
+        <span>2026-03-22T20:43:48.876Z</span><br />
         <span>Target unknown-external-endpoint is blocked</span>
       </li>
       <li>
         <strong>spend_checked</strong><br />
-        <span>2026-03-22T16:42:29.816Z</span><br />
+        <span>2026-03-22T20:43:48.876Z</span><br />
         <span>Planned spend 150 USDC exceeds cap</span>
       </li>
       <li>
         <strong>confirmation_checked</strong><br />
-        <span>2026-03-22T16:42:29.816Z</span><br />
+        <span>2026-03-22T20:43:48.876Z</span><br />
         <span>Human confirmation is required before irreversible action</span>
       </li>
       <li>
         <strong>task_blocked</strong><br />
-        <span>2026-03-22T16:42:29.816Z</span><br />
+        <span>2026-03-22T20:43:48.876Z</span><br />
         <span>Execution was blocked by policy and safety guardrails</span>
       </li></ul>
       </div>
@@ -289,37 +289,37 @@
   "timeline": [
     {
       "type": "intent_received",
-      "at": "2026-03-22T16:42:29.816Z",
+      "at": "2026-03-22T20:43:48.876Z",
       "detail": "fusu888 requested: Attempt a high-risk treasury action against a non-allowlisted target with spend beyond the configured cap."
     },
     {
       "type": "policy_compiled",
-      "at": "2026-03-22T16:42:29.816Z",
+      "at": "2026-03-22T20:43:48.876Z",
       "detail": "Policy policy-block-001 compiled with risk=high"
     },
     {
       "type": "action_checked",
-      "at": "2026-03-22T16:42:29.816Z",
+      "at": "2026-03-22T20:43:48.876Z",
       "detail": "Action execute_transfer is blocked"
     },
     {
       "type": "target_checked",
-      "at": "2026-03-22T16:42:29.816Z",
+      "at": "2026-03-22T20:43:48.876Z",
       "detail": "Target unknown-external-endpoint is blocked"
     },
     {
       "type": "spend_checked",
-      "at": "2026-03-22T16:42:29.816Z",
+      "at": "2026-03-22T20:43:48.876Z",
       "detail": "Planned spend 150 USDC exceeds cap"
     },
     {
       "type": "confirmation_checked",
-      "at": "2026-03-22T16:42:29.816Z",
+      "at": "2026-03-22T20:43:48.876Z",
       "detail": "Human confirmation is required before irreversible action"
     },
     {
       "type": "task_blocked",
-      "at": "2026-03-22T16:42:29.816Z",
+      "at": "2026-03-22T20:43:48.876Z",
       "detail": "Execution was blocked by policy and safety guardrails"
     }
   ],
@@ -331,8 +331,8 @@
     },
     "summary": "Task was rejected because it violated policy bounds or required confirmation."
   },
-  "generatedAt": "2026-03-22T16:42:29.816Z",
-  "receiptHash": "43af52e9b6ca8d43dcebcc40a627530f87cdd3b294e78b48c6d9896d8ca606e8"
+  "generatedAt": "2026-03-22T20:43:48.876Z",
+  "receiptHash": "9c6ba87e5297e058319efd1ba6209d49c450bb4ec89f3ceb50f2d305190ef92b"
 }</pre>
       </div>
   </div>

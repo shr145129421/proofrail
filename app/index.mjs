@@ -23,6 +23,10 @@ function loadJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
 
+function saveJson(file, data) {
+  fs.writeFileSync(file, JSON.stringify(data, null, 2));
+}
+
 function loadScenario(name) {
   return {
     policy: loadJson(path.join(policiesDir, `${name}-policy.json`)),
@@ -193,7 +197,7 @@ function renderDashboard(receipts) {
   <div class="wrap">
     <div class="hero">
       <h1>Proofrail Dashboard</h1>
-      <p>Private-by-default, delegated, policy-bounded execution with verifiable receipts for autonomous agents. This demo now shows both allowed and blocked execution paths, which makes the safety model much easier for judges to understand.</p>
+      <p>Private-by-default, delegated, policy-bounded execution with verifiable receipts for autonomous agents. This demo shows both allowed and blocked execution paths, which makes the safety model easier to inspect.</p>
     </div>
 
     <div class="grid">${scenarioCards}</div>
@@ -222,8 +226,30 @@ function runScenario(name) {
   const timeline = buildTimeline(policy, task, checks);
   const receipt = buildReceipt(policy, task, timeline, checks, name);
   const receiptPath = path.join(receiptsDir, `${name}-receipt-${Date.now()}.json`);
-  fs.writeFileSync(receiptPath, JSON.stringify(receipt, null, 2));
+  saveJson(receiptPath, receipt);
   return { receipt, receiptPath };
+}
+
+function writeServiceSpec() {
+  const spec = {
+    service: 'Proofrail Policy Evaluation API',
+    version: 1,
+    endpoints: [
+      {
+        method: 'POST',
+        path: '/evaluate',
+        description: 'Evaluate a task against a policy and return a receipt.',
+        requestFields: ['policy', 'task', 'scenarioName'],
+        responseFields: ['receiptHash', 'outcome', 'timeline', 'evaluation']
+      },
+      {
+        method: 'GET',
+        path: '/health',
+        description: 'Basic health status for the local service surface.'
+      }
+    ]
+  };
+  saveJson(path.join(root, 'docs', 'service-spec.json'), spec);
 }
 
 function main() {
@@ -234,6 +260,7 @@ function main() {
   const results = scenarios.map(runScenario);
   const dashboardPath = path.join(dashboardDir, 'index.html');
   fs.writeFileSync(dashboardPath, renderDashboard(results.map((x) => x.receipt)));
+  writeServiceSpec();
 
   console.log('Proofrail demo complete.');
   for (const result of results) {
@@ -243,6 +270,7 @@ function main() {
     console.log(`Saved receipt: ${result.receiptPath}`);
   }
   console.log(`Saved dashboard: ${dashboardPath}`);
+  console.log(`Saved service spec: ${path.join(root, 'docs', 'service-spec.json')}`);
 }
 
 main();

@@ -1,0 +1,32 @@
+{
+  "receiptVersion": 1,
+  "scenario": "service-demo",
+  "project": "Proofrail",
+  "task": {
+    "requester": "demo-user",
+    "summary": "Analyze an in-scope request through the service surface",
+    "action": "analyze",
+    "target": "approved-api",
+    "plannedSpend": {
+      "amount": 5,
+      "asset": "USDC"
+    }
+  },
+  "authority": {
+    "policyId": "service-policy-001",
+    "riskLevel": "medium",
+    "model": "scoped-delegation"
+  },
+  "evaluation": {
+    "actionAllowed": true,
+    "targetAllowed": true,
+    "spendAllowed": true,
+    "confirmationRequired": false
+  },
+  "outcome": {
+    "status": "success",
+    "summary": "Request allowed by policy."
+  },
+  "generatedAt": "2026-03-22T20:43:49.936Z",
+  "receiptHash": "34242d56e21053714ddbded75ab274ddf03d3efde72e5bf24f52b438c5c36664"
+}

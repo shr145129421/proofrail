@@ -44,6 +44,14 @@ npm start
 open dashboard/index.html
 ```
 
+## Local service surface
+
+```bash
+cd proofrail
+npm run serve
+curl http://localhost:8787/health
+```
+
 This generates:
 - a structured **success-path** receipt in `receipts/`
 - a structured **blocked-path** receipt in `receipts/`

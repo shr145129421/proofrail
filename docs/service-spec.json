@@ -1,0 +1,27 @@
+{
+  "service": "Proofrail Policy Evaluation API",
+  "version": 1,
+  "endpoints": [
+    {
+      "method": "POST",
+      "path": "/evaluate",
+      "description": "Evaluate a task against a policy and return a receipt.",
+      "requestFields": [
+        "policy",
+        "task",
+        "scenarioName"
+      ],
+      "responseFields": [
+        "receiptHash",
+        "outcome",
+        "timeline",
+        "evaluation"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/health",
+      "description": "Basic health status for the local service surface."
+    }
+  ]
+}
