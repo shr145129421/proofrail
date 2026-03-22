@@ -63,6 +63,8 @@ A human asks an agent to perform a sensitive action. Proofrail constrains the ac
 - `dashboard/index.html` — local visual demo
 - `docs/JUDGE_WALKTHROUGH.md` — fast path for judges
 - `docs/SPONSOR_ANGLES.md` — track-by-track positioning
+- `docs/DEMO_SCRIPT.md` — short walkthrough for live or async demos
+- `docs/PROJECT_BRIEF.md` — compact project summary
 
 ## Why it matters
 
