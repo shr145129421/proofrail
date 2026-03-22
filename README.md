@@ -65,6 +65,7 @@ A human asks an agent to perform a sensitive action. Proofrail constrains the ac
 - `docs/SPONSOR_ANGLES.md` — track-by-track positioning
 - `docs/DEMO_SCRIPT.md` — short walkthrough for live or async demos
 - `docs/PROJECT_BRIEF.md` — compact project summary
+- `docs/ARTIFACT_INDEX.md` — fastest path through all judging artifacts
 
 ## Why it matters
 
