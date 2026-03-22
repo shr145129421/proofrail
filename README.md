@@ -75,6 +75,7 @@ A human asks an agent to perform a sensitive action. Proofrail constrains the ac
 - `docs/PROJECT_BRIEF.md` — compact project summary
 - `docs/ARTIFACT_INDEX.md` — fastest path through all judging artifacts
 - `docs/DEMO_ASSETS.md` — visual walkthrough assets
+- `docs/VIDEO_WALKTHROUGH.md` — narrated screen walkthrough video
 
 ## Why it matters
 
