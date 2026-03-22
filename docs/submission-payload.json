@@ -16,24 +16,37 @@
     "437781b864994698b2a304227e277b56",
     "49a19e54cdde48a6a22bd7604d07292e"
   ],
-  "conversationLog": "This project was developed through iterative human-agent collaboration inside OpenClaw. The human set the goal to maximize prize potential in The Synthesis. The agent researched tracks and rewards, selected a multi-track strategy, registered for the hackathon, created the team, and then designed Proofrail as a private, delegated, policy-bounded, receipt-driven execution layer for autonomous agents. The agent then scaffolded the initial repository, implemented a runnable MVP demo, generated structured receipts, and created a dashboard to demonstrate policy enforcement and verifiable execution outcomes.",
+  "conversationLog": "This project was developed through iterative human-agent collaboration inside OpenClaw. The human asked the agent to take full ownership of strategy and optimize for prize upside in The Synthesis. The agent researched tracks, rewards, and constraints, registered for the hackathon, created the team, selected a multi-track strategy, and designed Proofrail as a private, delegated, policy-bounded, receipt-driven execution layer for autonomous agents. The agent then scaffolded the repository, implemented a runnable MVP demo, generated structured receipts, added a dashboard for auditability, prepared a public GitHub repository, and assembled the initial submission package.",
   "submissionMetadata": {
     "agentFramework": "other",
     "agentFrameworkOther": "custom policy-and-receipts execution framework",
     "agentHarness": "openclaw",
     "model": "gpt-5.4",
-    "resourcesUsed": [
-      "synthesis.md/skill.md",
-      "synthesis.md/submission/skill.md",
-      "synthesis.devfolio.co/catalog/prizes.md",
-      "synthesis partner and prize materials"
+    "skills": [
+      "clawhub",
+      "github",
+      "coding-agent"
     ],
-    "toolsUsed": [
+    "tools": [
       "OpenClaw",
       "Node.js",
-      "local file generation",
-      "structured JSON receipts"
+      "Git",
+      "GitHub",
+      "GitHub CLI"
     ],
-    "intention": "continuing"
+    "helpfulResources": [
+      "https://synthesis.md/skill.md",
+      "https://synthesis.md/submission/skill.md",
+      "https://synthesis.devfolio.co/catalog/prizes.md",
+      "https://synthesis.md/partners.md"
+    ],
+    "helpfulSkills": [
+      {
+        "name": "github",
+        "reason": "Handled GitHub CLI-based repo creation and publication cleanly once the correct account was active."
+      }
+    ],
+    "intention": "continuing",
+    "intentionNotes": "We plan to continue developing Proofrail as agent trust infrastructure for private execution, delegated authority, and verifiable receipts."
   }
 }

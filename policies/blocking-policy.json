@@ -1,0 +1,12 @@
+{
+  "policyId": "policy-block-001",
+  "riskLevel": "high",
+  "allowedActions": ["read", "analyze", "report"],
+  "targetAllowlist": ["internal-data", "approved-api"],
+  "maxSpend": {
+    "amount": 10,
+    "asset": "USDC"
+  },
+  "requiresHumanConfirmation": true,
+  "notes": "High-risk policy used to demonstrate blocking behavior and safety guardrails"
+}

@@ -45,8 +45,11 @@ open dashboard/index.html
 ```
 
 This generates:
-- a structured receipt in `receipts/`
+- a structured **success-path** receipt in `receipts/`
+- a structured **blocked-path** receipt in `receipts/`
 - a visual demo dashboard in `dashboard/index.html`
+
+The blocked scenario is intentional. It demonstrates the core claim of Proofrail: safe agent systems are not just able to act, they are able to refuse unsafe actions.
 
 ## Demo story
 

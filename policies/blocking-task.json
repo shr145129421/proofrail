@@ -1,0 +1,10 @@
+{
+  "requester": "fusu888",
+  "summary": "Attempt a high-risk treasury action against a non-allowlisted target with spend beyond the configured cap.",
+  "action": "execute_transfer",
+  "target": "unknown-external-endpoint",
+  "plannedSpend": {
+    "amount": 150,
+    "asset": "USDC"
+  }
+}
