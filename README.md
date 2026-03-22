@@ -61,6 +61,8 @@ A human asks an agent to perform a sensitive action. Proofrail constrains the ac
 - `agent_log.json` — structured execution and build log
 - `receipts/` — generated machine-readable receipts
 - `dashboard/index.html` — local visual demo
+- `docs/JUDGE_WALKTHROUGH.md` — fast path for judges
+- `docs/SPONSOR_ANGLES.md` — track-by-track positioning
 
 ## Why it matters
 
